@@ -1,0 +1,56 @@
+ul.post-list {
+    list-style: none;
+
+    li.post-list-item {
+        padding: 30px;
+
+        // &:not(:last-child) {
+            margin-bottom: 30px;
+        // }
+
+        // border: 1px solid #fff;
+        background-color: var(--color-article);
+        border-radius: 5px;
+
+        > *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            a {
+                color: var(--color-header);
+            }
+        }
+
+        ul.post-list-item-metadata {
+            list-style: none;
+            display: flex;
+
+            > *:not(:last-child) {
+                margin-right: 1em;
+            }
+
+            .categories > a {
+                color: var(--color-fg);
+            }
+
+            // 独立出来
+            ul.tags {
+                list-style: none;
+                display: flex;
+
+                > *:not(:last-child) {
+                    margin-right: 1em;
+                }
+
+                li  a {
+                    padding: 3px 6px;
+
+                    color: var(--color-fg);
+                    background: #333;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

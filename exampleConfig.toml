@@ -1,0 +1,22 @@
+[params]
+  description = ""
+  customCSS = [] # Optional Customised CSS
+  # mathjax = true
+
+  # [[menu.main]]
+  #   identifier = ""
+  #   name = ""
+  #   url = ""
+  #   weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories"
+    weight = 1

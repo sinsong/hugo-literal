@@ -1,0 +1,11 @@
+<ul id="social">
+  {{- range .Site.Data.social.social_icons -}}
+  {{- if isset $.Site.Author .id }}
+  <li>
+    <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
+      <i class="{{ .icon }} fa-lg"></i>
+    </a>
+  </li>
+  {{- end -}}
+  {{ end }}
+</ul>

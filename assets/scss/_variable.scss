@@ -1,0 +1,15 @@
+:root {
+    --color-fg: hsl(219, 18%, 68%);
+    --color-fg-darker: hsl(219, 15%, 45%);
+    // --color-bg: hsl(0, 0%, 12%);
+    --color-bg: hsl(219, 12%, 12%);
+
+    --color-select-fg: var(--color-fg);
+    --color-select-bg: hsl(219, 28%, 42%);
+
+    --color-nav: hsl(0, 0%, 95%);
+    --color-header: hsl(219, 26%, 78%);
+
+    --color-article: hsl(219, 8%, 19%);
+    --color-code: hsl(219, 12%, 12%);
+}

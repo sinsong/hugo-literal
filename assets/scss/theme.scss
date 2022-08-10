@@ -1,0 +1,56 @@
+@import "variable";
+@import "nav";
+@import "postlist";
+@import "pagination";
+@import "banner";
+@import "post";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+
+    color: var(--color-fg);
+    background: var(--color-bg);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > * {
+    flex-shrink: 0;
+}
+
+body > .container {
+    flex-grow: 1;
+}
+
+::selection {
+    color: var(--color-select-fg);
+    background: var(--color-select-bg);
+}
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         background: #22272e;
+//     }
+// }
+
+a {
+    color: var(--color-header);
+    transition: color .15s ease-in-out;
+    &:hover {
+        color: #6495ed;
+    }
+}
+
+footer {
+    margin: 2em 0;
+}
