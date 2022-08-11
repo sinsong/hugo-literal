@@ -30,7 +30,7 @@ body > * {
     flex-shrink: 0;
 }
 
-body > .container {
+body > .main-container {
     flex-grow: 1;
 }
 
@@ -76,6 +76,6 @@ pre > code {
 
 // layout
 
-.single-container {
-    margin-top: 10vh;
+.single-row {
+    margin-top: 2em;
 }

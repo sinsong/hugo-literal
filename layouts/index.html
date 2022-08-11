@@ -1,21 +1,17 @@
 {{ define "main" }}
 {{- partial "banner.html" . -}}
-<div class="main container">
-  <div class="col-md-8 mx-auto">
-    <ul class="post-list">
-      {{ $pages := where site.RegularPages "Type" "posts" }}
-      {{ $paginator := .Paginate $pages }}
-
-      {{ range $index, $page := $paginator.Pages }}
-      <li class="post-list-item">
-        <h2><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a></h2>
-        {{- partial "post/metadata.html" . -}}
-        <p>{{ .Summary }}</p>
-      </li>
-      {{ end }}
-    </ul>
-
-    {{ template "_internal/pagination.html" . }}
-  </div>
+<div class="col-md-5 mx-auto">
+  <ul class="post-list">
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages }}
+    {{ range $index, $page := $paginator.Pages }}
+    <li class="post-list-item">
+      <h2><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a></h2>
+      {{- partial "post/metadata.html" . -}}
+      <p>{{ .Summary }}</p>
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
 </div>
 {{ end }}

@@ -3,7 +3,11 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        {{- block "main" . }}{{- end }}
+
+        <div class="container-fluid main-container">
+            {{- block "main" . }}{{- end }}
+        </div>
+        
         {{- partial "footer.html" . -}}
         {{- partial "script.html" . -}}
     </body>

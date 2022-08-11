@@ -1,18 +1,19 @@
 {{ define "main" }}
-<div class="main container-fluid single-container">
-  <div class="row">
-    <div class="col-xl-3 d-none d-xl-block">
-      {{- partial "post/aside.html" . -}}
-    </div>
-    <div class="col-xl-6">
-      <article>
-        <h1>{{ .Title }}</h1>
-        <hr>
-        <div class="content">
-          {{ .Content }}
-        </div>
-      </article>
-    </div>
+<div class="row single-row">
+  <div class="col-xl-3 d-none d-xl-block ms-auto">
+    {{- partial "post/aside.html" . -}}
+  </div>
+  <div class="col-xl-5">
+    <article>
+      <h1>{{ .Title }}</h1>
+      <hr>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+  <div class="col-xl-3 d-none d-xl-block me-auto">
+    <!-- 虚空元素 -->
   </div>
 </div>
 {{ end }}
