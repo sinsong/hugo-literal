@@ -8,7 +8,7 @@
   })
 
   /** @type {HTMLDivElement} */
-  let container = document.querySelector('.main-container')
+  let container = document.getElementById('main-container')
   
   window.addEventListener('scroll', () => {
     // let pos = document.documentElement.scrollTop // 页面滚动

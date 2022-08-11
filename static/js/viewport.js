@@ -1,13 +1,21 @@
 (()=>{
-  let article = document.querySelector('article')
+  // let article = document.querySelector('article')
+  let article = null
 
-  let meter = document.querySelector('.meter')
-  let cursor = document.querySelector('.cursor')
-  let upbound = document.querySelector('.upbound')
-  let lobound = document.querySelector('.lobound')
+  let meter = null
+  let cursor = null
+  let upbound = null
+  let lobound = null
 
-  if (article === null) {
-    return
+  // if (article === null) {
+  //   return
+  // }
+
+  let getMeter = () => {
+    meter = document.querySelector('.viewport .meter')
+    cursor = document.querySelector('.viewport .cursor')
+    upbound = document.querySelector('.viewport .upbound')
+    lobound = document.querySelector('.viewport .lobound')
   }
 
   let handleViewport = () => {
@@ -26,6 +34,22 @@
     cursor.style.width = `${setWidth}px`
   }
 
-  handleViewport()
-  window.addEventListener('scroll', handleViewport)
+  window.LiteralViewPort = {
+    init: () => {
+      article = document.querySelector('article')
+
+      if (article === null) {
+        return
+      }
+      getMeter()
+      handleViewport()
+      window.addEventListener('scroll', handleViewport)
+    },
+    fini: () => {
+      window.removeEventListener('scroll', handleViewport)
+    }
+  }
+
+  // handleViewport()
+  // window.addEventListener('scroll', handleViewport)
 })()

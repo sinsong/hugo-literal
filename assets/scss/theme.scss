@@ -4,7 +4,7 @@
 @import "pagination";
 @import "banner";
 @import "post";
-@import "tools";
+@import "overlay";
 @import "aside";
 
 * {
@@ -30,7 +30,7 @@ body > * {
     flex-shrink: 0;
 }
 
-body > .main-container {
+#main-container {
     flex-grow: 1;
 }
 

@@ -1,9 +1,38 @@
+<script src="/vendor/bootstrap/bootstrap.bundle.js"></script>
+<script src="/vendor/feather-icons/feather.js"></script>
+<script src="/vendor/jquery-pjax/jquery-3.6.0.js"></script>
+<script src="/vendor/jquery-pjax/jquery.pjax.js"></script>
 <script src="/js/tools.js"></script>
 <script src="/js/viewport.js"></script>
 <script src="/js/toc.js"></script>
-<script src="/vendor/bootstrap/bootstrap.bundle.js"></script>
-<script src="/vendor/feather-icons/feather.js"></script>
 
 <script>
   feather.replace()
+
+  $(document).pjax('a', '#main-container')
+
+  let loadingbar = document.querySelector('.loadingbar')
+  $(document).on('pjax:send', () => {
+    loadingbar.classList.add('active')
+  })
+
+  $(document).on('pjax:complete', () => {
+    loadingbar.classList.remove('active')
+  })
+
+  {{/*  和替换有关，但是就没被调用过  */}}
+
+  $(document).on('pjax:beforeReplace', () => {
+    window.LiteralViewPort.fini()
+  })
+
+  $(document).on('pjax:end', () => {
+    window.LiteralViewPort.init()
+    feather.replace()
+  })
+
+  {{/*  初始化 ViewPort  */}}
+  window.addEventListener('load', () => {
+    window.LiteralViewPort.init()
+  })
 </script>
