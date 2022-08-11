@@ -3,6 +3,26 @@
     bottom: 35px;
     right: 20px;
 
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 42px;
+        height: 42px;
+
+        background: var(--color-article);
+        border: none;
+        appearance: none;
+        border-radius: 5px;
+
+        transition: color .15s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            color: #6495ed;
+        }
+    }
+
     #top-tool {
         visibility: hidden;
     }

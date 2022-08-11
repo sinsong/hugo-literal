@@ -1,9 +1,14 @@
 aside {
-    padding: 15px;
+    margin-left: 15px;
+    padding: 30px 30px;
     background: var(--color-article);
 
     position: sticky;
     top: 30px;
+
+    > p {
+        margin-bottom: 0.5em;
+    }
 
     .viewport {
         display: flex;
@@ -34,6 +39,44 @@ aside {
         }
         .lobound {
             text-align: right;
+        }
+    }
+
+    .toc {
+        margin-top: 30px;
+
+        .toc-label {
+            color: var(--color-header);
+        }
+    }
+
+    #TableOfContents {
+        margin: 0 -15px;
+
+        ul {
+            list-style: none;
+        }
+
+        li > ul a {
+            padding-left: calc(1.5em + 15px);
+        }
+
+        li > a {
+            display: inline-block;
+            width: 100%;
+            padding: 0.35em 15px;
+            border-radius: 5px;
+
+            text-decoration: none;
+            color: var(--color-fg);
+
+            &:active {
+                color: var(--color-header);
+            }
+
+            &:hover {
+                background: #555;
+            }
         }
     }
 }

@@ -25,6 +25,7 @@ ul.post-list {
         ul.post-list-item-metadata {
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
 
             > *:not(:last-child) {
                 margin-right: 1em;
@@ -38,6 +39,7 @@ ul.post-list {
             ul.tags {
                 list-style: none;
                 display: flex;
+                flex-wrap: wrap;
 
                 > *:not(:last-child) {
                     margin-right: 1em;
