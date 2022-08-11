@@ -20,13 +20,16 @@ ul.pagination {
             color: var(--color-fg);
         }
 
-        a {
+        > a,
+        > span {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 4.2em;
             height: 3em;
+        }
 
+        a {
             color: var(--color-fg);
             text-decoration: none;
 

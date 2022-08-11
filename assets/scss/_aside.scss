@@ -1,0 +1,39 @@
+aside {
+    padding: 15px;
+    background: var(--color-article);
+
+    position: sticky;
+    top: 30px;
+
+    .viewport {
+        display: flex;
+        align-items: center;
+
+        .meter {
+            flex-grow: 1;
+
+            margin: 0 15px;
+            height: 3px;
+            background: var(--color-fg);
+
+            overflow: hidden;
+            position: relative;
+
+            .cursor {
+                position: absolute;
+                background: #6495ed;
+                height: 3px;
+            }
+        }
+
+        .upbound,
+        .lobound {
+            display: inline-block;
+            width: 2em;
+            flex-shrink: 0;
+        }
+        .lobound {
+            text-align: right;
+        }
+    }
+}

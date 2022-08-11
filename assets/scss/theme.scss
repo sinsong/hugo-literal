@@ -4,6 +4,8 @@
 @import "pagination";
 @import "banner";
 @import "post";
+@import "tools";
+@import "aside";
 
 * {
     box-sizing: border-box;
@@ -53,4 +55,10 @@ a {
 
 footer {
     margin: 2em 0;
+}
+
+// layout
+
+.single-container {
+    margin-top: 10vh;
 }

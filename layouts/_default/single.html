@@ -1,15 +1,18 @@
 {{ define "main" }}
-<div class="container">
-  <article class="col-md-8 mx-auto">
-
-    <h1>{{ .Title }}</h1>
-
-    <hr>
-
-    <div class="content">
-      {{ .Content }}
+<div class="main container-fluid single-container">
+  <div class="row">
+    <div class="col-xl-3 d-none d-xl-block">
+      {{- partial "post/aside.html" . -}}
     </div>
-
-  </article>
+    <div class="col-xl-6">
+      <article>
+        <h1>{{ .Title }}</h1>
+        <hr>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </article>
+    </div>
+  </div>
 </div>
 {{ end }}

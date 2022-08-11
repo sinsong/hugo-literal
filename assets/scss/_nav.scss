@@ -40,6 +40,14 @@ nav {
     }
 
     .nav-link {
-     
+        border-bottom: 3px solid transparent;
+
+        &.active {
+            border-bottom: 3px solid #6495ed;
+            &:hover {
+                color: var(--color-nav);
+                cursor: default;
+            }
+        }
     }
 }
