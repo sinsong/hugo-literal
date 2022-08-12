@@ -27,9 +27,6 @@
     -webkit-text-size-adjust: 100%;
 
     scroll-behavior: smooth;
-
-    // magic: CSS 居中于滚动条跳跃导致问题的解决
-    margin-left: calc(100vw - 100%);
 }
 
 body {
@@ -86,6 +83,14 @@ code {
     background: var(--inline-code-bg);
 
     font-size: 0.85em;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+
+    background: var(--color-header);
+    border: 0; // 清掉原来的样式
 }
 
 // layout

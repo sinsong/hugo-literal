@@ -30,7 +30,7 @@
 
     // nav
     --color-nav: hsl(0, 0%, 95%);
-    --color-nav-bg: hsla(0, 0, 0, 0.1);
+    --color-nav-bg: hsla(0, 0%, 0%, 0.1);
     --color-nav-link-hover: #6495ed;
     --navlink-border-thickness: 2px;
     --navlink-border: var(--navlink-border-thickness) solid transparent;
@@ -58,4 +58,8 @@
     // tags
     --tags-fg: var(--color-fg);
     --tags-bg: #333;
+
+    // blockquote
+    --blockquote-bg: hsla(0, 0%, 0%, 0.2);
+    --blockquote-border: 3px solid var(--color-header);
 }

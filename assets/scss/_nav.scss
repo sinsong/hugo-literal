@@ -1,4 +1,7 @@
 nav.nav-bar {
+    // magic: CSS 居中于滚动条跳跃导致问题的解决
+    padding-left: calc(100vw - 100%);
+
     background: var(--color-nav-bg);
 
     .container {
@@ -7,7 +10,6 @@ nav.nav-bar {
     }
 
     .container > * {
-        
         flex-shrink: 0;
     }
 
