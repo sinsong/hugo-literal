@@ -10,8 +10,10 @@ article {
 }
 
 .content {
+    line-height: 1.5;
+    word-break: break-word;
+
     p {
-        line-height: 1.42;
     }
 
     > * {
@@ -44,7 +46,7 @@ article {
     ul,
     dl {
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; // 可以被 .content > :last-child 覆盖
     }
 
     ol ol,

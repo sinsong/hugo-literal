@@ -57,6 +57,14 @@ footer {
     margin: 2em 0;
 }
 
+pre > code {
+    display: inline-block;
+    background: unset;
+    padding: unset;
+    border-radius: unset;
+    font-size: unset;
+}
+
 code {
     display: inline-block;
     padding: 2px 6px;
@@ -64,14 +72,6 @@ code {
     background: #555;
 
     font-size: 0.85em;
-}
-
-pre > code {
-    display: inline-block;
-    background: unset;
-    padding: unset;
-    border-radius: unset;
-    font-size: unset;
 }
 
 // layout
