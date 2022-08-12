@@ -24,7 +24,7 @@ aside {
         .meter {
             flex-grow: 1;
 
-            height: 3px;
+            height: var(--color-viewport-thickness);
             background: var(--color-fg);
 
             overflow: hidden;
@@ -33,7 +33,7 @@ aside {
             .cursor {
                 position: absolute;
                 background: var(--color-viewport-color);
-                height: 3px;
+                height: var(--color-viewport-thickness);
             }
         }
     }
