@@ -1,2 +1,8 @@
+[datetime]
+other = "Jun 2, 2006"
+
 [categories]
 other = "Categories:"
+
+[modifiedOn]
+other = "Modified on "

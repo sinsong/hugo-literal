@@ -1,2 +1,8 @@
+[datetime]
+other = "2006-01-02 15:04:05"
+
 [categories]
 other = "分类："
+
+[modifiedOn]
+other = "修改于："
