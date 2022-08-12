@@ -25,6 +25,7 @@ ul.post-list {
         ul.post-list-item-metadata {
             list-style: none;
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
 
             > *:not(:last-child) {

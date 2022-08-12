@@ -17,7 +17,7 @@
 
   {{ if .Params.tags }}
   <ul class="tags">
-    {{ range $i, $t := .Params.tags }}<li><a href="{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}">#{{ $t }}</a></li>{{ end }}
+    {{ range $i, $t := .Params.tags }}<li><a class="tag" href="{{ relLangURL ( printf "tags/%s" ( $t | urlize ) ) }}"><i data-feather="tag"></i><span>{{ $t }}</span></a></li>{{ end }}
   </ul>
   {{ end }}
 </ul>

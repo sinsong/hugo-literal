@@ -93,3 +93,19 @@ code {
 .single-row {
     margin-top: 2em;
 }
+
+// tag
+.tag {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    svg {
+        width: 1em;
+        height: 1em;
+    }
+    span {
+        margin-left: 0.25em;
+    }
+}
