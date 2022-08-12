@@ -46,10 +46,10 @@ body > * {
 // }
 
 a {
-    color: var(--color-header);
+    color: var(--link-fg);
     transition: color .15s ease-in-out;
     &:hover {
-        color: #6495ed;
+        color: var(--link-hover);
     }
 }
 
@@ -67,9 +67,11 @@ pre > code {
 
 code {
     display: inline-block;
-    padding: 2px 6px;
-    border-radius: 5px;
-    background: #555;
+    padding: var(--inline-code-padding);
+    border-radius: var(--inline-code-border-radius);
+
+    color: var(--inline-code-fg);
+    background: var(--inline-code-bg);
 
     font-size: 0.85em;
 }

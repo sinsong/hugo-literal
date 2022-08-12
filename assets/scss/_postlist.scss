@@ -48,8 +48,8 @@ ul.post-list {
                 li  a {
                     padding: 3px 6px;
 
-                    color: var(--color-fg);
-                    background: #333;
+                    color: var(--tags-fg);
+                    background: var(--tags-bg);
                     border-radius: 2px;
                 }
             }

@@ -5,19 +5,19 @@ ul.pagination {
     border-radius: 5px;
     overflow: auto;
 
-    background: var(--color-article);
+    background: var(--pagination-bg);
 
     li.page-item {
 
         user-select: none;
 
         &.active {
-            background: #424242;
+            background: var(--pagination-active);
         }
 
         &.disabled a:hover,
         &.active a:hover {
-            color: var(--color-fg);
+            color: var(--pagination-fg);
         }
 
         > a,
@@ -35,7 +35,7 @@ ul.pagination {
 
             transition: color .15s ease-in-out;
             &:hover {
-                color: #6495ed;
+                color: var(--pagination-hover);
             }
         }
 
@@ -43,6 +43,7 @@ ul.pagination {
             margin-right: auto;
         }
 
+        // 分隔边框
         // &:not(:last-child) {
         //     border-right: 1px solid #555;
         // }

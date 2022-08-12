@@ -1,5 +1,5 @@
 nav.nav-bar {
-    background: hsla(0, 0, 0, 0.1);
+    background: var(--color-nav-bg);
 
     .container {
         display: flex;
@@ -13,7 +13,7 @@ nav.nav-bar {
 
     a {
         display: inline-block;
-        padding: 1em;
+        padding: calc(1em - var(--navlink-border-thickness));
 
         text-decoration: none;
         color: var(--color-nav);
@@ -21,7 +21,7 @@ nav.nav-bar {
 
         transition: color .15s ease-in-out;
         &:hover {
-            color: #6495ed;
+            color: var(--color-nav-link-hover);
         }
     }
 
@@ -40,10 +40,10 @@ nav.nav-bar {
     }
 
     .nav-link {
-        border-bottom: 3px solid transparent;
+        border-bottom: var(--navlink-border);
 
         &.active {
-            border-bottom: 3px solid #6495ed;
+            border-bottom: var(--navlink-border-active);
             &:hover {
                 color: var(--color-nav);
                 cursor: default;

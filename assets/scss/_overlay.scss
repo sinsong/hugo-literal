@@ -11,8 +11,8 @@
         width: 42px;
         height: 42px;
 
-        color: var(--color-header);
-        background: var(--color-article);
+        color: var(--tools-fg);
+        background: var(--tools-bg);
         border: none;
         appearance: none;
         border-radius: 5px;
@@ -20,7 +20,7 @@
         transition: color .15s ease-in-out;
         &:hover {
             cursor: pointer;
-            color: #6495ed;
+            color: var(--tools-hover);
         }
     }
 
@@ -34,17 +34,17 @@
     top: 0;
 
     width: 100%;
-    height: 3px;
+    height: var(--loadingbar-thickness);
 
     // background: red;
 
     .meter {
-        height: 3px;
+        height: var(--loadingbar-thickness);
         pointer-events: none;
     }
 
     &.active .meter {
-        background: #6495ed;
+        background: var(--loadingbar-color);
         animation: loading 2.25s infinite .75s;
     }
 }

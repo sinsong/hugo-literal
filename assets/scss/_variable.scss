@@ -1,15 +1,60 @@
 :root {
+    // default color
     --color-fg: hsl(219, 18%, 68%);
-    --color-fg-darker: hsl(219, 15%, 45%);
-    // --color-bg: hsl(0, 0%, 12%);
     --color-bg: hsl(219, 12%, 12%);
+    // --color-bg: hsl(0, 0%, 12%);
+    
+    // default variant
+    --color-fg-darker: hsl(219, 15%, 45%);
 
+    // text foreground
+    --color-header: hsl(219, 26%, 78%);
+
+    // bakcground
+    --color-article: hsl(219, 8%, 19%);
+    --color-code: hsl(219, 12%, 12%);
+
+    // ::selection
     --color-select-fg: var(--color-fg);
     --color-select-bg: hsl(219, 28%, 42%);
 
-    --color-nav: hsl(0, 0%, 95%);
-    --color-header: hsl(219, 26%, 78%);
+    // a
+    --link-fg: var(--color-header);
+    --link-hover: #6495ed;
 
-    --color-article: hsl(219, 8%, 19%);
-    --color-code: hsl(219, 12%, 12%);
+    // inline code
+    --inline-code-fg: var(--color-fg);
+    --inline-code-bg: #555;
+    --inline-code-padding: 2px 6px;
+    --inline-code-border-radius: 5px;
+
+    // nav
+    --color-nav: hsl(0, 0%, 95%);
+    --color-nav-bg: hsla(0, 0, 0, 0.1);
+    --color-nav-link-hover: #6495ed;
+    --navlink-border-thickness: 2px;
+    --navlink-border: var(--navlink-border-thickness) solid transparent;
+    --navlink-border-active: var(--navlink-border-thickness) solid #6495ed;
+
+    // aside viewport cursor
+    --color-viewport-color: #6495ed;
+    // aside TableOfContents
+    --color-toc-hover: #555;
+
+    // tools
+    --tools-fg: var(--color-header);
+    --tools-bg: var(--color-article);
+    --tools-hover: #6495ed;
+    --loadingbar-color: #6495ed;
+    --loadingbar-thickness: 2px;
+
+    // pagination
+    --pagination-fg: var(--color-fg);
+    --pagination-bg: var(--color-article);
+    --pagination-active: #424242;
+    --pagination-hover: #6495ed;
+
+    // tags
+    --tags-fg: var(--color-fg);
+    --tags-bg: #333;
 }
