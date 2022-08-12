@@ -11,13 +11,19 @@ aside {
     }
 
     .viewport {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
+
+        .labels {
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 0.5em;
+        }
 
         .meter {
             flex-grow: 1;
 
-            margin: 0 15px;
             height: 3px;
             background: var(--color-fg);
 
@@ -29,16 +35,6 @@ aside {
                 background: var(--color-viewport-color);
                 height: 3px;
             }
-        }
-
-        .upbound,
-        .lobound {
-            display: inline-block;
-            width: 2em;
-            flex-shrink: 0;
-        }
-        .lobound {
-            text-align: right;
         }
     }
 

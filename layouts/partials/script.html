@@ -7,8 +7,13 @@
 <script src="/js/toc.js"></script>
 
 <script>
-  feather.replace()
+  {{/*  初始化  */}}
+  window.addEventListener('load', () => {
+    ViewPort()
+    feather.replace()
+  })
 
+  // JQuery-PJAX
   $(document).pjax('a', '#main-container')
 
   let loadingbar = document.querySelector('.loadingbar')
@@ -20,19 +25,13 @@
     loadingbar.classList.remove('active')
   })
 
-  {{/*  和替换有关，但是就没被调用过  */}}
+  {{/* 和替换有关，但是就没被调用过 */}}
 
   $(document).on('pjax:beforeReplace', () => {
-    window.LiteralViewPort.fini()
   })
 
   $(document).on('pjax:end', () => {
-    window.LiteralViewPort.init()
+    ViewPort()
     feather.replace()
-  })
-
-  {{/*  初始化 ViewPort  */}}
-  window.addEventListener('load', () => {
-    window.LiteralViewPort.init()
   })
 </script>
