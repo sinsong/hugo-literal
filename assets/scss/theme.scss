@@ -18,6 +18,18 @@
 
     color: var(--color-fg);
     background: var(--color-bg);
+
+    // 字体渲染
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    scroll-behavior: smooth;
+
+    // magic: CSS 居中于滚动条跳跃导致问题的解决
+    margin-left: calc(100vw - 100%);
 }
 
 body {
