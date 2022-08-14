@@ -1,4 +1,7 @@
 nav.nav-bar {
+    --navlink-border-thickness: 2px;
+
+
     // magic: CSS 居中于滚动条跳跃导致问题的解决
     padding-left: calc(100vw - 100%);
 
@@ -34,6 +37,7 @@ nav.nav-bar {
     ul.nav-links {
         display: flex;
         list-style: none;
+        margin-right: auto;
 
         > li {
             display: inline-block;
@@ -42,13 +46,68 @@ nav.nav-bar {
     }
 
     .nav-link {
-        border-bottom: var(--navlink-border);
+        border-bottom: var(--navlink-border-thickness) solid transparent;
 
         &.active {
-            border-bottom: var(--navlink-border-active);
+            border-bottom: var(--navlink-border-thickness) solid var(--navlink-active-border);
             &:hover {
                 color: var(--color-nav);
                 cursor: default;
+            }
+        }
+    }
+
+    #theme-preference-tool {
+        display: flex;
+        align-items: center;
+
+        > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > svg {
+                width: 20px;
+                height: 20px;
+            }
+            padding: 5px 10px;
+
+            color: var(--color-header);
+            background: var(--tools-bg);
+            border: 1px solid var(--tools-fg);
+
+            transition: outline .15s ease-in-out;
+
+            &.active {
+                background: #555;
+            }
+
+            &:hover {
+                cursor: pointer;
+                z-index: 1; // 放置 outline 被遮挡
+            }
+
+            &:active {
+                outline: solid;
+            }
+
+            &:focus {
+                outline: solid;
+                z-index: 1;
+            }
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            &:not(:first-child) {
+                margin-left: -1px;
             }
         }
     }

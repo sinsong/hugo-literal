@@ -1,4 +1,4 @@
-:root {
+:root[data-theme="dark"] {
     // default color
     --color-fg: hsl(219, 18%, 68%);
     --color-bg: hsl(219, 12%, 12%);
@@ -32,9 +32,7 @@
     --color-nav: hsl(0, 0%, 95%);
     --color-nav-bg: hsla(0, 0%, 0%, 0.1);
     --color-nav-link-hover: #6495ed;
-    --navlink-border-thickness: 2px;
-    --navlink-border: var(--navlink-border-thickness) solid transparent;
-    --navlink-border-active: var(--navlink-border-thickness) solid #6495ed;
+    --navlink-active-border: #6495ed;
 
     // aside viewport cursor
     --color-viewport-color: hsl(258, 95%, 62%);
@@ -62,4 +60,13 @@
     // blockquote
     --blockquote-bg: hsla(0, 0%, 0%, 0.2);
     --blockquote-border: 3px solid var(--color-header);
+}
+
+:root[data-theme="light"] {
+    // default color
+    --color-fg: hsl(219, 12%, 12%);
+    --color-bg: hsl(219, 18%, 68%);
+
+    // nav
+    --color-nav-bg: hsla(0, 0%, 0%, 0.1);
 }
