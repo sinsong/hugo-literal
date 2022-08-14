@@ -5,8 +5,16 @@
 <script src="/js/toc.js"></script>
 
 <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  }
+
   window.addEventListener('load', () => {
     ViewPort()
     feather.replace()
   })
 </script>
+
+<script src="/vendor/mathjax/tex-chtml.js" id="MathJax-script" async></script>
