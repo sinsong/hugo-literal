@@ -1,0 +1,15 @@
+:root {
+    // Firefox
+    scrollbar-color: #6495ed #191a1f;
+    scrollbar-width: thin;
+
+    // Chrome
+    &::-webkit-scrollbar {
+        width: 8px;
+        background: #191a1f;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #6495ed;
+    }
+}
