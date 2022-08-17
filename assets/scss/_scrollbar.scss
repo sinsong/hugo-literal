@@ -1,15 +1,41 @@
 :root {
+    --scrollbar-thumb: #6495ed;
+    --scrollbar-track: #191a1f;
+
     // Firefox
-    scrollbar-color: #6495ed #191a1f;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
     scrollbar-width: thin;
 
     // Chrome
     &::-webkit-scrollbar {
         width: 8px;
-        background: #191a1f;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #6495ed;
+        background: var(--scrollbar-thumb);
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--scrollbar-track);
+    }
+}
+
+// post
+.content pre {
+    // Firefox
+    scrollbar-color: #555 var(--scrollbar-track);
+    scrollbar-width: thin;
+
+    // Chrome
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #333;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--scrollbar-track);
     }
 }

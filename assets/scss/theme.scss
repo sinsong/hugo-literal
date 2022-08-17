@@ -76,14 +76,13 @@ pre > code {
 }
 
 code {
-    display: inline-block;
     padding: var(--inline-code-padding);
     border-radius: var(--inline-code-border-radius);
 
     color: var(--inline-code-fg);
     background: var(--inline-code-bg);
 
-    font-size: 0.85em;
+    font-size: 85%;
 }
 
 hr {
