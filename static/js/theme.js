@@ -52,12 +52,10 @@
     })
   }
 
-  window.addEventListener('load', () => {
-    reflectPreference()
-    initThemePreferenceTool()
+  reflectPreference()
+  initThemePreferenceTool()
 
-    window.matchMedia(mediaQueryExpersion).addEventListener('change', () => {
-      reflectPreference()
-    })
+  window.matchMedia(mediaQueryExpersion).addEventListener('change', () => {
+    reflectPreference()
   })
 })()

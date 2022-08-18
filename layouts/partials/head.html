@@ -3,12 +3,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <link rel="stylesheet" href="{{ ( resources.Get "scss/theme.scss" | resources.ToCSS ).Permalink }}" media="all">
+  <script src="/js/theme.js" async></script>
+
   {{- partial "meta.html" . -}}
-  <script src="/js/theme.js"></script>
   
   <link rel="stylesheet" href="/vendor/bootstrap/bootstrap-grid.css">
-
-  <link rel="stylesheet" href="{{ ( resources.Get "scss/theme.scss" | resources.ToCSS ).Permalink }}">
   <link rel="stylesheet" href="{{ ( resources.Get "scss/highlight.scss" | resources.ToCSS ).Permalink }}">
 
   {{/** title **/}}
