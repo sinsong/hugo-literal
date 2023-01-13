@@ -1,3 +1,4 @@
+'use strict';
 (()=>{
   const themeSotrageKey = "theme-preference"
   let mediaQueryExpersion = '(prefers-color-scheme: dark)'

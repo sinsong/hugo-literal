@@ -1,3 +1,4 @@
+'use strict';
 (()=>{
   let btn = document.getElementById('top-tool')
   btn.addEventListener('click', () => {

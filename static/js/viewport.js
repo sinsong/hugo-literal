@@ -1,3 +1,4 @@
+'use strict';
 function ViewPort() {
   let viewport = document.querySelector('.viewport')
   if (viewport === null) {

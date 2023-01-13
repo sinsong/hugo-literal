@@ -1,3 +1,4 @@
+'use strict';
 (()=>{
   let hugoToc = document.getElementById('TableOfContents')
   if (hugoToc === null) {
